@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+}
+
+.remaining {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.budget-setup {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.budget-setup h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.budget-setup input,
+.budget-setup button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.expense-tracker {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#expense-table-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#expense-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#expense-table th,
+#expense-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+#budget-status.green {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+#budget-status.red {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+#expense-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input,
+select,
+button {
+    flex: 1 1 200px;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#chart-container {
+    text-align: center;
+    max-width: 100%;
+}
+
+#expense-chart {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.Food {
+    background-color: #ffb3b3;
+}
+
+.Transport {
+    background-color: #ffdab3;
+}
+
+.Utilities {
+    background-color: #ffffb3;
+}
+
+.Education {
+    background-color: #b3ffb3;
+}
+
+.EMI {
+    background-color: #b3e6ff;
+}
+
+.Entertainment {
+    background-color: #dab3ff;
+}
+
+.Medical {
+    background-color: #ffb3da;
+}
+
+@media (max-width: 768px) {
+
+    .budget-setup,
+    .expense-tracker {
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5em;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .budget-setup,
+    .expense-tracker {
+        padding: 10px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.2em;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 0.7em;
+    }
+}
